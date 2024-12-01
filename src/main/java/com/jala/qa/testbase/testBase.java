@@ -25,7 +25,7 @@ public	testBase() throws IOException{
 		FileInputStream file = new FileInputStream(baseLocation+"\\src\\main\\java\\com\\jala\\qa\\enviromentLayer\\config.properties");
 		prop.load(file);
 	}
-	@Test
+	
 	public void intilization() {
 		String Browser = prop.getProperty("Browsername");
 		if(Browser.equals("chrome")) {
@@ -53,7 +53,7 @@ public	testBase() throws IOException{
 	}
 	
 	public static void holdTime() throws InterruptedException {
-		Thread.sleep(3000);   // 2 sec => wait for 3 sec = 1 sec hold
+		Thread.sleep(4000);   // 2 sec => wait for 3 sec = 1 sec hold
 		
 	}
 	
