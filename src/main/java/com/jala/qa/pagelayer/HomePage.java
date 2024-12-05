@@ -42,5 +42,9 @@ public class HomePage extends testBase {
 		logOutBtn.click();
 	}
 	
+	public void clickOnSearchTab() {
+		searchTab.click();
+	}
+	
 	
 }

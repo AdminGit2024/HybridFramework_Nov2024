@@ -15,6 +15,8 @@ import com.jala.qa.utilityLayer.dataProvider;
 
 public class CreaeEmployeeTestPage extends testBase {
 
+	
+	String Bookpath ="\\src\\main\\java\\com\\jala\\qa\\dataLayer\\Book.xlsx";
 	EmployeePage emp;
 	public CreaeEmployeeTestPage() throws IOException {
 		super();
@@ -43,7 +45,7 @@ public class CreaeEmployeeTestPage extends testBase {
 	@DataProvider
 	public Object[][] getdataFromExcelSheet() throws IOException {
 		dataProvider dataP = new dataProvider();
-		Object[][] data = dataP.getDataFromExcel("Sheet1");
+		Object[][] data = dataP.getDataFromExcel("Sheet3",Bookpath);
 		return data;
 	}
 	

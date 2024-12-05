@@ -33,7 +33,7 @@ public class LoginTestPage extends testBase {
 		login.clickOnLoginBtn();
 		holdTime();
 		String actual = driver.getCurrentUrl();
-		Assert.assertEquals(actual, "https://magnus.jalatechnologies.com/Home/Index", "TC failed");
+		Assert.assertEquals(actual, "https://magnus.jalatechnologies.com/Home/Index123", "TC failed");
 		Reporter.log("Url matched.. TC passed", true);
 	}
 	
